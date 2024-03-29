@@ -39,27 +39,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Raycast : MonoBehaviour
+public class _Camera : MonoBehaviour
 {
-  public float raycast Distance = 20f;
+    public float raycastDistance = 20f;
 
-  void Update()
-  {
-    Ray ray = new Ray(transform.position, transform.forward);
-    RaycastHit hitInfo;
-
-    if (Physics.Raycast(ray, out hitInfo, raycastDistance))
+    void Update()
     {
-      Destroy(hitInfo.collider.gameObject);
+        Ray ray = new Ray(transform.position, transform.forward);
+        RaycastHit hitInfo;
 
-      if (hitInfo.collider.CompareTag(Enemy));
-      {
-        Debug.Log("Voce Destruiu o alvo");
-      }
+        if (Physics.Raycast(ray, out hitInfo, raycastDistance))
+        {
+            Destroy(hitInfo.collider.gameObject);
+
+            if (hitInfo.collider.CompareTag("Enemy")) ;
+            {
+                Debug.Log("Voce Destruiu o alvo");
+            }
+        }
     }
-  }
 }
-
 ```
 
 # Câmera
@@ -147,4 +146,12 @@ public class Camera : MonoBehaviour
         }
     }
 }
+
+```
+
+## Demonstração por video
+
+
+
+
 
