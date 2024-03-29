@@ -6,6 +6,9 @@ Este projeto contém um script de Raycast em C# para Unity.
 
 ## Descrição
 
+- Kauã de Castro(KalCastro)
+- Vincenzo Monaco(VincenMonaco)
+
 O script `Raycast.cs` é um componente que pode ser anexado a qualquer objeto do Unity. Ele lança um raio na direção que o objeto está voltado. Se o raio atingir um objeto dentro de uma certa distância, esse objeto será destruído.
 
 ## Autores
