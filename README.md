@@ -27,7 +27,7 @@ O código funciona da seguinte maneira:
 
 8. `Debug.Log("Voce Destruiu o alvo");`: Se o objeto destruído tinha a tag "Enemy", uma mensagem é registrada no console do Unity.
 
-## Código
+## Código Raycast
 
 Aqui está o código principal:
 
